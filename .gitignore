@@ -3,6 +3,7 @@
 
 #IDE Files
 *.project
+*.settings
 *.classpath
 
 # Compiled class file
