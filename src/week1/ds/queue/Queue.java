@@ -1,7 +1,7 @@
 /**
  * Queue Interface.
  */
-package week1.queue;
+package week1.ds.queue;
 
 /**
  * @author Sandipan Aich

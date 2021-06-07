@@ -6,7 +6,7 @@
  * enqueue O(1)
  * dequeue O(1)
  */
-package week1.queue;
+package week1.ds.queue;
 
 /**
  * @author Sandipan Aich
