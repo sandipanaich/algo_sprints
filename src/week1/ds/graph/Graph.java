@@ -43,7 +43,7 @@ public class Graph {
 			adj[v].add(new Edge(v, u, w));
 	}
 
-	private static final class Edge {
+	public static final class Edge {
 		int u;
 		int v;
 		int w;
@@ -79,7 +79,7 @@ public class Graph {
 		}
 	}
 
-	private void exploreByDFS(int u, boolean[] visited, Consumer<Integer> consumer) {
+	public void exploreByDFS(int u, boolean[] visited, Consumer<Integer> consumer) {
 		visited[u] = true;
 		consumer.accept(u);
 		for (Edge edge : adj[u]) {
@@ -89,7 +89,7 @@ public class Graph {
 		}
 	}
 
-	private void exploreByBFS(int u, boolean[] visited, Consumer<Integer> consumer) {
+	public void exploreByBFS(int u, boolean[] visited, Consumer<Integer> consumer) {
 
 		Queue<Integer> queue = new LinkedList<>();
 		queue.add(u);
@@ -108,6 +108,14 @@ public class Graph {
 				}
 			}
 		}
+	}
+
+	public int size() {
+		return size;
+	}
+
+	public boolean isUndirected() {
+		return undirected;
 	}
 
 	public static void main(String[] args) {
@@ -164,5 +172,4 @@ public class Graph {
 		System.out.println(Arrays.toString(undirecteddfs.toArray()));
 
 	}
-
 }
