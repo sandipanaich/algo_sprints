@@ -1,13 +1,14 @@
 /**
  * To see if than undirected graph has island, or whether the graph is a forest.
+ * Time Complexity: O(V + E)
  */
 package week1.ds.graph;
 
-import java.util.List;
 import java.util.function.Consumer;
 
-import week1.ds.graph.Graph.Edge;
-
+/**
+ * @author Sandipan Aich
+ */
 public class Islands {
 
 	public static final int forests(Graph graph) {

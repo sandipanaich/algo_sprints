@@ -13,6 +13,9 @@ import java.util.List;
 import java.util.Queue;
 import java.util.function.Consumer;
 
+/**
+ * @author Sandipan Aich
+ */
 public class Graph {
 
 	private List<Edge>[] adj;
