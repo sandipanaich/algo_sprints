@@ -1,8 +1,8 @@
 /**
- * Selection Sort Implementation.
+ * Bubble Sort Implementation.
  * Time Complexity: O(n^2)
  * Space Complexity: O(1) // In-place Algorithm
- * Stable: NO
+ * Stable: YES
  */
 package week1.algo.sort;
 
@@ -11,21 +11,22 @@ import java.util.Arrays;
 /**
  * @author Sandipan Aich
  */
-public class SelectionSort {
+public class BubbleSort {
 
-	public static <T extends Comparable<T>> void sort(T[] data) {
+	public static final <T extends Comparable<T>> void sort(T[] data) {
+		
 		if (data == null)
 			return;
 
 		int size = data.length;
+		int last = size - 1;
+		
+		for (int i = last; i > 0; i--) {
+			for (int j = 0; j < i; j++) {
 
-		for (int i = 0; i < size; i++) {
-			int min = i;
-			for (int j = i + 1; j < size; j++) {
-				if (less(data[j], data[i]))
-					min = j;
+				if (less(data[j + 1], data[j]))
+					swap(data, j, j + 1);
 			}
-			swap(data, i, min);
 		}
 	}
 
@@ -45,8 +46,8 @@ public class SelectionSort {
 
 	public static void main(String[] args) {
 
-//		Integer[] data = new Integer[] { 0, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-		String[] data = new String[] { "M", "L", "K", "J", "I", "H", "G", "F", "E", "D", "C", "B", "A", };
+		Integer[] data = new Integer[] { 0, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+//		String[] data = new String[] { "M", "L", "K", "J", "I", "H", "G", "F", "E", "D", "C", "B", "A", };
 		sort(data);
 		System.out.println(Arrays.toString(data));
 	}
