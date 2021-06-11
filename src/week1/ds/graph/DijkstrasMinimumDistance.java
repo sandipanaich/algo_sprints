@@ -1,5 +1,5 @@
 /**
- * Dijkstrs Minimum Distance Algorithm Implementation.
+ * Dijkstras Minimum Distance Algorithm Implementation.
  * Space Complexity: O(V + E)
  * Running Time Complexity: O((V + E)logV)
  */
