@@ -1,3 +1,7 @@
+/**
+ * Kruskals Minimum Spanning Tree Algorithm Implementation.
+ * Running Time Complexity: O(ElogV)
+ */
 package week1.ds.graph;
 
 import java.util.ArrayList;
