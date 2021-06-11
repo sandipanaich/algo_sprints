@@ -1,7 +1,6 @@
 /**
- * Dijkstras Minimum Distance Algorithm Implementation.
- * Space Complexity: O(V + E)
- * Running Time Complexity: O((V + E)logV)
+ * Kruskals Minimum Spanning Tree Algorithm Implementation.
+ * Running Time Complexity: O(ElogV)
  */
 package week1.ds.graph;
 
