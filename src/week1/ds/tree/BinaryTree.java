@@ -22,6 +22,9 @@ public class BinaryTree<K, V> {
 	private int size;
 
 	public void add(K key, V value) {
+		
+		if(key == null)
+			return;
 
 		if (root == null) {
 			root = new Node<K, V>(key, value);
