@@ -16,6 +16,7 @@ public class MaxHeap<T extends Comparable<T>> {
 	private int length;
 	private T[] data;
 
+	@SuppressWarnings("unchecked")
 	public MaxHeap(int length) {
 
 		this.data = (T[]) new Comparable[length];
