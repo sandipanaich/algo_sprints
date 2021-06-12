@@ -1,4 +1,12 @@
-package arrays;
+/**
+ * An implementation of the Kadanes Algorithm.
+ * Time complexity: O(n)
+ */
+package week1.ds.arrays;
+
+/**
+ * @author Sandipan Aich
+ */
 
 public class KadanesAlgorithm {
 
