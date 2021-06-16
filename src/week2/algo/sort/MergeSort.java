@@ -1,7 +1,7 @@
 /**
  * Merge Sort Implementation.
  * Time Complexity: O(n log(n))
- * Best and Worst Casr: O(n log(n))
+ * Best and Worst Case: O(n log(n))
  * Space Complexity: O(log(n))
  */
 package week2.algo.sort;
