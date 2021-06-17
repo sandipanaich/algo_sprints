@@ -47,6 +47,10 @@ public class Graph {
 			adj[v].add(new Edge(u, v, w));
 	}
 
+	public int size() {
+		return size;
+	}
+
 	public void bfs(Consumer<Integer> consumer) {
 
 		boolean[] visited = new boolean[size];
@@ -95,8 +99,7 @@ public class Graph {
 
 			for (Edge edge : adj[u]) {
 				int v = edge.v;
-				if (!visited[v])
-				{
+				if (!visited[v]) {
 					visited[v] = true;
 					queue.add(v);
 				}
