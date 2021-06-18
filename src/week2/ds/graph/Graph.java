@@ -19,7 +19,7 @@ import java.util.function.Consumer;
 public class Graph {
 
 	private int size;
-	private List<Edge>[] adj;
+	List<Edge>[] adj;
 	private boolean undirected;
 
 	public Graph(int size) {
