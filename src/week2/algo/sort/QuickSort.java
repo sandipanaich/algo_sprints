@@ -48,8 +48,8 @@ public class QuickSort {
 				j--;
 			}
 		}
-		
 		swap(data, i, pivot);
+		
 		return i;
 	}
 
@@ -64,8 +64,9 @@ public class QuickSort {
 	}
 
 	public static void main(String[] args) {
+		Integer[] data = new Integer[] { 8, 10, 3, 2, 1, 50, 40, 30, 20, 4 };
 //		Integer[] data = new Integer[] { 0, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-		String[] data = new String[] { "M", "L", "K", "J", "I", "H", "G", "F", "E", "D", "C", "B", "A", };
+//		String[] data = new String[] { "M", "L", "K", "J", "I", "H", "G", "F", "E", "D", "C", "B", "A", };
 		sort(data);
 		System.out.println(Arrays.toString(data));
 	}
