@@ -32,12 +32,6 @@ public class ShellSort1 {
 		return one.compareTo(two) < 0;
 	}
 
-	private static final <T> void swap(T[] array, int i, int j) {
-		T temp = array[i];
-		array[i] = array[j];
-		array[j] = temp;
-	}
-
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(sort(new Integer[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 })));
 		System.out.println(Arrays.toString(sort(new Integer[] { 0, 9, 8, 7, 6, 5, 4, 3, 2, 1 })));
