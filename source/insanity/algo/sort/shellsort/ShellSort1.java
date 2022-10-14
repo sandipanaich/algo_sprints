@@ -15,10 +15,9 @@ public class ShellSort1 {
 				int j = i - gap;
 				T element = array[i];
 
-				while(j >= 0 && less(element, array[j]))
-				{
-					array[j+gap] = array[j]; 
-					j-=gap;
+				while (j >= 0 && less(element, array[j])) {
+					array[j + gap] = array[j];
+					j -= gap;
 				}
 				array[j + gap] = element;
 			}
