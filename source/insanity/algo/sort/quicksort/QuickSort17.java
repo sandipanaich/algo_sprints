@@ -27,22 +27,40 @@ public class QuickSort17 {
 
 	private static final <T extends Comparable<T>> int partition(T[] array, int left, int right) {
 
-		int pivot = right;
+		int pivot = left;
 		T element = array[pivot];
-		right -= 1;
+		left += 1;
 
 		while (left <= right) {
-
 			if (less(array[left], element))
 				left++;
 			else if (less(element, array[right]))
 				right--;
 			else
-				swap(array, left++, right--);
+				swap(array, left, right);
 		}
-		swap(array, left, pivot);
-		return left;
+		swap(array, pivot, right);
+		return right;
 	}
+
+//	private static final <T extends Comparable<T>> int partition(T[] array, int left, int right) {
+//
+//		int pivot = right;
+//		T element = array[pivot];
+//		right -= 1;
+//
+//		while (left <= right) {
+//
+//			if (less(array[left], element))
+//				left++;
+//			else if (less(element, array[right]))
+//				right--;
+//			else
+//				swap(array, left++, right--);
+//		}
+//		swap(array, left, pivot);
+//		return left;
+//	}
 
 	private static final <T extends Comparable<T>> boolean less(T one, T two) {
 		return one.compareTo(two) < 0;
