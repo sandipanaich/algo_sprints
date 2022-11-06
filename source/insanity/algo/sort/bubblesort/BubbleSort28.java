@@ -2,7 +2,7 @@ package insanity.algo.sort.bubblesort;
 
 import java.util.Arrays;
 
-public class BubbleSort21 {
+public class BubbleSort28 {
 
 	public static final <T extends Comparable<T>> T[] sort(T[] array) {
 
@@ -19,7 +19,6 @@ public class BubbleSort21 {
 			}
 		}
 		return array;
-
 	}
 
 	private static final <T> void swap(T[] array, int i, int j) {
@@ -38,4 +37,5 @@ public class BubbleSort21 {
 		System.out.println(Arrays.toString(sort(new Integer[] { 0, 3, 4, 7, 8, 9, 6, 5, 2, 1 })));
 		System.out.println(Arrays.toString(sort(new Integer[] { 1, 0, 3, 2, 4, 5, 7, 6, 9, 8 })));
 	}
+
 }
