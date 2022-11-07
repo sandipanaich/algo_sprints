@@ -1,4 +1,4 @@
-package insanity.algo.dynamic.programming.day1;
+package insanity.algo.dynamic.programming.attempt;
 
 import java.util.Arrays;
 
