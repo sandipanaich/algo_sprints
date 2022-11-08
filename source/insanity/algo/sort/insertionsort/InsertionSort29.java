@@ -1,8 +1,8 @@
-package insanity.algo.sort.bubblesort;
+package insanity.algo.sort.insertionsort;
 
 import java.util.Arrays;
 
-public class BubbleSort21 {
+public class InsertionSort29 {
 
 	public static final <T extends Comparable<T>> T[] sort(T[] array) {
 
@@ -10,22 +10,17 @@ public class BubbleSort21 {
 			return array;
 
 		int length = array.length;
-		int last = length - 1;
 
-		for (int i = last; i > 0; i--) {
-			for (int j = 0; j < i; j++) {
-				if (less(array[j + 1], array[j]))
-					swap(array, j, j + 1);
+		for (int i = 1; i < length; i++) {
+			T element = array[i];
+			int j = i - 1;
+			while (j >= 0 && less(element, array[j])) {
+				array[j + 1] = array[j];
+				j -= 1;
 			}
+			array[j + 1] = element;
 		}
 		return array;
-
-	}
-
-	private static final <T> void swap(T[] array, int i, int j) {
-		T temp = array[i];
-		array[i] = array[j];
-		array[j] = temp;
 	}
 
 	private static final <T extends Comparable<T>> boolean less(T one, T two) {
@@ -38,4 +33,5 @@ public class BubbleSort21 {
 		System.out.println(Arrays.toString(sort(new Integer[] { 0, 3, 4, 7, 8, 9, 6, 5, 2, 1 })));
 		System.out.println(Arrays.toString(sort(new Integer[] { 1, 0, 3, 2, 4, 5, 7, 6, 9, 8 })));
 	}
+
 }
